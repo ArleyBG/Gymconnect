@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/registro-cliente.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <title>Formulario de Registro del Cliente</title>
+</head>
+<body>
+    <header class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="titulo"><img class=" img-fluid" src="img/arley's gym logo.png" alt="" width="200" height="200">GYMCONNECT</h2>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="row justify-content-between text-dark">
+            <div class="col-12 col-lg-6">
+                <form action="form_registro_cliente.html">
+                    <div class="mb-4">
+                        <h4 class="mb-5">Crea un usuario para continuar</h4>
+                        <label for="docType" class="form-label fw-bold">Seleccione el tipo de documento:</label>
+                        <select class="form-select" aria-label="default select tipoid" name="docType" id="docType">
+                            <option selected>Tipo de Identifacion</option>
+                            <option value="docId">Cedula de Ciudadania</option>
+                            <option value="passport">DNI</option>
+                            <option value="docExtran">Cedula de Extranjeria</option>
+                            <option value="driverLicense">Licencia de conduccion</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-4">
+                        <label for="docId" class="form-label fw-bold">Documento de identificacion:</label>
+                        <input type="text" class="form-control" placeholder="Ingrese su numero de documento" name="docId" id="docId">
+                    </div>
+
+                    <div class="mb-4">
+                        <label for="name" class="form-label fw-bold">nombre:</label>
+                        <input type="text" class="form-control" placeholder="Ingrese su nombre" name="nombre" id="name">
+                    </div>
+
+                    <div class="mb-4">
+                        <label for="email" class="form-label fw-bold">Correo electronico:</label>
+                        <input type="email" class="form-control" placeholder="name@example.com" name="email" id="email" aria-describedby="emailHelp">
+                        <div id="emailHelp" class="form-text">Nunca compartiremos su correo electrónico con nadie más.</div>
+                    </div>
+
+                    <div class="mb-4">
+                        <label for="pwd" class="form-label fw-bold">Contraseña:</label>
+                        <input type="password" class="form-control" placeholder="Introduzca la contraseña" name="pwd" id="pwd" aria-describedby="passwordlHelpBlock">
+                        <div id="passwordlHelpBlock" class="form-text">Su contraseña debe tener entre 8 y 20 caracteres, contener letras y números, y no debe contener espacios, caracteres especiales ni emoji.</div>
+                    </div>
+
+                    <div class="mb-4">
+                        <label for="sexo" class="form-label fw-bold">Genero:</label>
+                        <select class="form-select" aria-label="default select Genero" name="sexo" id="sexo">
+                            <option selected>Genero</option>
+                            <option value="masculino">Hombre</option>
+                            <option value="femenino">Mujer</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="birthDate" class="form-label fw-bold">Fecha de nacimiento</label>
+                        <input type="date" id="birthDate" name="birthDate" class="form-control">
+                      </div>
+                      
+                      <div class="mb-4">
+                        <label for="numero" class="form-label fw-bold">Celular:</label>
+                        <input type="text" class="form-control" placeholder="Numero de celular xxx xxxxxxx" name="numero" id="numero">
+                    </div>
+
+                    <div class="form-check mb-3">
+                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                        <label class="form-check-label" for="invalidCheck">
+                          Acepto recibir mensajes de Gymconnect por e-mail
+                        </label>
+                    </div>
+
+                    <div class="form-check mb-4">
+                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                        <label class="form-check-label" for="invalidCheck">
+                          Aceptar terminos y condiciones
+                        </label>
+                        <div class="invalid-feedback">
+                          Debes Aceptar antes de enviar.
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <div class="col-12 col-lg-4 align-self-center">
+                <div class="card card1">
+                    <div class="card-body">
+                        <h4 class="card-title mt-4 text-center">Elige el plan de tu interes</h4>
+
+                        <div class="row mt-5">
+                            <div class="col mt-2">
+                                <div class="form-check">
+                                    <label for="año" class="form-check-label fw-bold">Año</label>
+                                    <input class="form-check-input mx-auto me-3" type="radio" name="año" id="año">
+                                </div>
+                            </div>
+                            <div class="col text-center">
+                                <h6 class="fw-bold">Precio</h6>
+                                <p>$ 00.000</p>
+                            </div>
+
+                            <hr>
+
+                            <div class="col mt-2">
+                                <div class="form-check">
+                                    <label for="año" class="form-check-label fw-bold">Mes</label>
+                                    <input class="form-check-input mx-auto me-3" type="radio" name="año" id="año">
+                                </div>
+                            </div>
+                            <div class="col text-center">
+                                <h6 class="fw-bold">Precio</h6>
+                                <p>$ 00.000</p>
+                            </div>
+
+                            <hr>
+
+                            <div class="col mt-2">
+                                <div class="form-check">
+                                    <label for="año" class="form-check-label fw-bold">15 Dias</label>
+                                    <input class="form-check-input mx-auto me-3" type="radio" name="año" id="año">
+                                </div>
+                            </div>
+                            <div class="col text-center">
+                                <h6 class="fw-bold">Precio</h6>
+                                <p>$ 00.000</p>
+                            </div>
+
+                            <hr>
+
+                            <div class="col mt-2">
+                                <div class="form-check">
+                                    <label for="año" class="form-check-label fw-bold">8 Dias</label>
+                                    <input class="form-check-input mx-auto me-3" type="radio" name="año" id="año">
+                                </div>
+                            </div>
+                            <div class="col text-center">
+                                <h6 class="fw-bold">Precio</h6>
+                                <p>$ 00.000</p>
+                            </div>
+
+                            <hr>
+
+                            <div class="col-12 offset-1 mt-3">
+                                <h6><i class="fas fa-credit-card me-3"></i>Tarjetas de Credito</h6>
+                                <h6><i class="fas fa-credit-card me-3"></i>Debito</h6>
+                            </div>
+
+                            <div class="text-center mt-4 mb-4">
+                                <a href="#" class="btn btn btn-primary w-50">Pagar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 offset-2 col-md-12 offset-md-3 col-lg-6 offset-lg-1 mb-5 mt-5">
+                <button class="btn btn-danger " id="registro" type="submit">Registrarme</button>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

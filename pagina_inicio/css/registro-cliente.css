@@ -1,0 +1,22 @@
+body {
+    background: #f0f3f5;
+    color: #fff;
+}
+
+.titulo {
+    color: #b00808;
+    font-family: michroma;
+}
+
+.card1 {
+    background: #efefef;
+}
+
+#registro {
+    width: 330px;
+}
+
+::placeholder {
+    color: grey;
+    opacity: 0.5;
+}

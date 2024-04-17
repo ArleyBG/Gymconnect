@@ -1,0 +1,55 @@
+body {
+    background: #f0f3f5;
+    color: #fff;
+}
+
+.row-head {
+    background: #d6d6d6;
+}
+
+h2 {
+    color: #b00808;
+    font-family: michroma;
+}
+
+.dropdown-toggle::after {
+    display: none;
+}
+
+#cogIcon {
+    color: #6171ff;
+    margin-left: 0x;
+}
+
+#notIcon {
+    color: #6171ff;
+}
+
+.dropdown-header {
+    color: #b00808;
+    font-family: michroma;
+    font-size: 16px;
+}
+
+.btn-torey {
+    background: #fff;
+}
+
+.user-icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    color: #fff;
+    background-color: #6171ff;
+    text-align: center;
+    line-height: 30px;
+    font-weight: bold;
+}
+
+.card-search {
+    background: #a3afee;
+}
+
+#button-exit {
+    width: 160px;
+}

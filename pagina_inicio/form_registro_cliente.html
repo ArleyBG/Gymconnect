@@ -38,12 +38,12 @@
 
                     <div class="mb-4">
                         <label for="docId" class="form-label fw-bold">Documento de identificacion:</label>
-                        <input type="text" class="form-control" placeholder="Ingrese su numero de documento" name="docId" id="docId">
+                        <input type="text"  pattern="[0-9]*" maxlength="10" class="form-control" placeholder="Ingrese su numero de documento" name="docId" id="docId" required autocomplete="off" onkeypress="return (event.charCode >= 48 && event.charCode <= 57)" min="1" />
                     </div>
 
                     <div class="mb-4">
                         <label for="name" class="form-label fw-bold">nombre:</label>
-                        <input type="text" class="form-control" placeholder="Ingrese su nombre" name="nombre" id="name">
+                        <input type="text" class="form-control" placeholder="Solo caracteres alfabeticos" name="nombre" id="name" required autocomplete="off" onkeypress="return (event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122)" />
                     </div>
 
                     <div class="mb-4">
@@ -72,9 +72,9 @@
                         <input type="date" id="birthDate" name="birthDate" class="form-control">
                       </div>
                       
-                      <div class="mb-4">
+                    <div class="mb-4">
                         <label for="numero" class="form-label fw-bold">Celular:</label>
-                        <input type="text" class="form-control" placeholder="Numero de celular xxx xxxxxxx" name="numero" id="numero">
+                        <input type="text" pattern="[0-9]*" maxlength="10" class="form-control" placeholder="Numero de celular" name="numero" id="numero" required autocomplete="off" onkeypress="return (event.charCode >= 48 && event.charCode <= 57)" min="1" />
                     </div>
 
                     <div class="form-check mb-3">

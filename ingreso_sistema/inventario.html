@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/registro-cliente.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <title>Formulario Inventario</title>
+</head>
+<body>
+    <!-- titulo de la pagina -->
+    <header class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="titulo"><img class=" img-fluid" src="../img/arley's gym logo.png" alt="" width="200" height="200">GYMCONNECT</h2>
+            </div>
+        </div>
+    </header>
+
+    <!-- formulario de registro -->
+    <div class="container">
+        <div class="row justify-content-between text-dark">
+            <div class="col-12 col-lg-6">
+                <form action="form_registro_cliente.html">
+                    <div class="mb-4">
+                        <h4 class="mb-5">Inventario</h4>
+                        <label for="idadmin" class="form-label fw-bold">Id Administrador:</label>
+                        <input type="text"  pattern="[0-9]*" maxlength="10" class="form-control" placeholder="Ingrese su Id" name="idadmin" id="idadmin" required autocomplete="off" onkeypress="return (event.charCode >= 48 && event.charCode <= 57)" min="1" />
+                    </div>
+
+                    <div class="mb-4">
+                        <label for="idventa" class="form-label fw-bold">Id Venta:</label>
+                        <input type="text"  pattern="[0-9]*" maxlength="10" class="form-control" placeholder="Ingrese el Id venta" name="idventa" id="idventa" required autocomplete="off" onkeypress="return (event.charCode >= 48 && event.charCode <= 57)" min="1" />
+                    </div>
+
+                    <div class="mb-4">
+                        <label for="idproducto" class="form-label fw-bold">Id Producto:</label>
+                        <input type="text"  pattern="[0-9]*" maxlength="10" class="form-control" placeholder="Ingrese el Id producto" name="idproducto" id="idproducto" required autocomplete="off" onkeypress="return (event.charCode >= 48 && event.charCode <= 57)" min="1" />
+                    </div>
+
+                    <div class="mb-4">
+                        <label for="cantidad" class="form-label fw-bold">Cantidad:</label>
+                        <input type="text" class="form-control" placeholder="Ingrese la cantidad" name="cantidad" id="cantidad" required autocomplete="off" onkeypress="return (event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122)" />
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="ingreso" class="form-label fw-bold">Fecha de ingreso</label>
+                        <input type="date" id="ingreso" name="ingreso" class="form-control">
+                      </div>
+                      
+                    <div class="mb-4">
+                        <label for="proveedor" class="form-label fw-bold">Proveedor:</label>
+                        <input type="text" pattern="[0-9]*" maxlength="40" class="form-control" placeholder="Nombre del proveedor" name="proveedor" id="proveedor"/>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Boton de registro -->
+            <div class="col-12 offset-2 col-md-12 offset-md-3 col-lg-6 offset-lg-1 mb-5 mt-5">
+                <button class="btn btn-danger " id="registro" type="submit">Registrar producto</button>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <script src="../js/jquery-3.7.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
